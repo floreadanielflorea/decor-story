@@ -100,38 +100,127 @@
   </section>
 
   <!-- SERVICII -->
-  <section id="servicii">
-    <h2>Serviciile noastre</h2>
-    <h3>Litere volumetrice</h3>
-    <p>Ideal pentru nunți, botezuri și aniversări speciale.</p>
-    <h3>Arcade florale</h3>
-    <p>Decor spectaculos pentru intrări sau photo corner.</p>
-  </section>
+  <section class="services">
+    <div class="service-card">
+      <h3>Litere volumetrice</h3>
+      <p>Cifre și litere luminoase, disponibile în diferite dimensiuni, pentru un decor spectaculos.</p>
+      <div class="slider-container">
+        <button class="slider-btn prev">&#10094;</button>
+        <div class="slider" id="slider1">
+          <a href="images/litera1.jpg" data-lightbox="litere" data-title="Litere volumetrice - Model 1">
+            <img src="images/litera1.jpg" alt="Litere Volumetrice">
+          </a>
+          <a href="images/litera2.jpg" data-lightbox="litere" data-title="Litere volumetrice - Model 2">
+            <img src="images/litera2.jpg" alt="Litere Volumetrice">
+          </a>
+          <a href="images/litera3.jpg" data-lightbox="litere" data-title="Litere volumetrice - Model 3">
+            <img src="images/litera3.jpg" alt="Litere Volumetrice">
+          </a>
+        </div>
+        <button class="slider-btn next">&#10095;</button>
+      </div>
+    </div>
 
-  <!-- GALERIE -->
-  <section id="galerie" class="gallery">
-    <h2>Galerie foto</h2>
-    <p>Descoperă câteva dintre decorurile realizate de noi.</p>
-    <img src="images/arcada1.jpg" alt="Arcadă florală nuntă">
-    <img src="images/litere1.jpg" alt="Litere volumetrice LOVE">
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📍 Bistrița-Năsăud, Cluj, Mureș</p>
-    <p>📞 <a href="tel:+40712345678">+40 712 345 678</a></p>
-    <p>✉️ <a href="mailto:contact@decorstory-bn.ro">contact@decorstory-bn.ro</a></p>
-    <div class="social-icons">
-      <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+    <div class="service-card">
+      <h3>Arcade pentru evenimente</h3>
+      <p>Arcade moderne și elegante, ideale pentru cununii, nunți și aniversări.</p>
+      <div class="slider-container">
+        <button class="slider-btn prev">&#10094;</button>
+        <div class="slider" id="slider2">
+          <a href="images/arcada1.jpg" data-lightbox="arcade" data-title="Arcadă pentru evenimente - Model 1">
+            <img src="images/arcada1.jpg" alt="Arcadă">
+          </a>
+          <a href="images/arcada2.jpg" data-lightbox="arcade" data-title="Arcadă pentru evenimente - Model 2">
+            <img src="images/arcada2.jpg" alt="Arcadă">
+          </a>
+          <a href="images/arcada3.jpg" data-lightbox="arcade" data-title="Arcadă pentru evenimente - Model 3">
+            <img src="images/arcada3.jpg" alt="Arcadă">
+          </a>
+        </div>
+        <button class="slider-btn next">&#10095;</button>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Hai să planificăm împreună decorul evenimentului tău!</p>
+    <div class="social-icons">
+      <a href="https://wa.me/40758459005" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:floreadanielflorea@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/decor_story_bn" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/@decorstory.bn" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </section>
+
   <footer>
-    <p>© 2025 Decor Story BN – Toate drepturile rezervate</p>
+    <p>© 2025 Decor Story. Toate drepturile rezervate.</p>
   </footer>
 
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <!-- Slider & Swipe JS -->
+  <script>
+    function initSlider(container) {
+      const slider = container.querySelector('.slider');
+      const prevBtn = container.querySelector('.prev');
+      const nextBtn = container.querySelector('.next');
+
+      prevBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: -120, behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: 120, behavior: 'smooth' });
+      });
+    }
+
+    document.querySelectorAll('.slider-container').forEach(initSlider);
+
+    // Swipe pentru mobil & drag desktop
+    document.querySelectorAll('.slider').forEach(slider => {
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      slider.addEventListener('mousedown', e => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+
+      slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+      });
+
+      slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+      });
+
+      slider.addEventListener('mousemove', e => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+      });
+
+      // Pentru mobil (touch)
+      slider.addEventListener('touchstart', e => {
+        startX = e.touches[0].pageX;
+        scrollLeft = slider.scrollLeft;
+      });
+
+      slider.addEventListener('touchmove', e => {
+        const x = e.touches[0].pageX;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+      });
+    });
+  </script>
 </body>
 </html>
