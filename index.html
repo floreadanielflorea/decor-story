@@ -2,22 +2,25 @@
 <html lang="ro">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2RYG23XV0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2RYG23XV0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H2RYG23XV0');
+  </script>
 
-  gtag('config', 'G-H2RYG23XV0');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Decor Story BN - Litere volumetrice & Decoruri Evenimente</title>
-  <meta name="description" content="Decor Story BN oferă litere volumetrice și arcade elegante pentru evenimente memorabile în Bistrița-Năsăud, Cluj și Mureș.">
-  
+
+  <!-- SEO Meta -->
+  <title>Decor Story BN - Litere volumetrice Bistrița | Arcade & Decorațiuni Evenimente</title>
+  <meta name="description" content="Închiriază litere volumetrice și arcade elegante pentru nunți, botezuri și evenimente speciale în Bistrița, Cluj și Mureș. Contactează Decor Story BN acum!">
+  <meta name="keywords" content="litere volumetrice Bistrița, litere nunta Cluj, arcade evenimente Mureș, decorațiuni nuntă Bistrița, Decor Story BN">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Decor Story BN - Litere volumetrice & Arcade Evenimente">
-  <meta property="og:description" content="Decoruri elegante pentru nunți, cununii, aniversări și alte momente speciale. Închiriază litere volumetrice și arcade cu Decor Story BN.">
+  <meta property="og:description" content="Închiriază litere volumetrice și arcade elegante pentru nunți, botezuri și aniversări. Disponibil în Bistrița-Năsăud, Cluj și Mureș.">
   <meta property="og:image" content="images/logo.png">
   <meta property="og:url" content="https://decorstory-bn.ro">
   <meta property="og:type" content="website">
@@ -25,316 +28,123 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Decor Story BN - Litere volumetrice & Arcade Evenimente">
-  <meta name="twitter:description" content="Decoruri elegante pentru evenimente speciale. Închiriază litere volumetrice și arcade cu Decor Story BN.">
+  <meta name="twitter:description" content="Litere volumetrice și arcade elegante pentru evenimente speciale în Bistrița, Cluj și Mureș.">
   <meta name="twitter:image" content="images/logo.png">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/logo.png">
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Decor Story BN",
+    "image": "https://decorstory-bn.ro/images/logo.png",
+    "@id": "https://decorstory-bn.ro",
+    "url": "https://decorstory-bn.ro",
+    "telephone": "+40 7xx xxx xxx",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Strada Exemplu 1",
+      "addressLocality": "Bistrița",
+      "addressRegion": "BN",
+      "postalCode": "420123",
+      "addressCountry": "RO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "47.133",
+      "longitude": "24.5"
+    },
+    "sameAs": [
+      "https://www.facebook.com/decorstorybn",
+      "https://www.instagram.com/decorstorybn",
+      "https://wa.me/407xxxxxxxx"
+    ]
+  }
+  </script>
 
-  <!-- Lightbox2 CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-  <!-- Font Awesome pentru iconițe -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #FFFFFF; /* alb fundal */
-      color: #000000; /* text negru */
-    }
-
-    header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      background-color: #E5E5E5; /* gri perlat */
-    }
-
-    header img {
-      max-height: 80px;
-    }
-
-    .about {
-      text-align: center;
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 40px 20px;
-      background-color: #F8F8F8;
-    }
-
-    .service-card {
-      background: #FFFFFF;
-      border: 1px solid #E5E5E5;
-      border-radius: 8px;
-      padding: 20px;
-      max-width: 300px;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .service-card h3 {
-      color: #C9A14D;
-    }
-
-    /* --- Slider & Lightbox styles --- */
-    .slider-container {
-      position: relative;
-      overflow: hidden;
-      margin-top: 15px;
-    }
-
-    .slider {
-      display: flex;
-      gap: 10px;
-      overflow: hidden;
-      scroll-behavior: smooth;
-      cursor: grab;
-    }
-
-    .slider img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    .slider img:hover {
-      transform: scale(1.1);
-    }
-
-    .slider-btn {
-      position: absolute;
-      top: 40%;
-      background-color: rgba(201, 161, 77, 0.8); /* auriu semi-transparent */
-      color: #fff;
-      border: none;
-      font-size: 20px;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 50%;
-      z-index: 10;
-    }
-
-    .slider-btn.prev {
-      left: 5px;
-    }
-
-    .slider-btn.next {
-      right: 5px;
-    }
-
-    .slider-btn:hover {
-      background-color: #C9A14D; /* auriu solid */
-    }
-
-    .contact {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background-color: #C9A14D; /* auriu */
-      color: #fff;
-      font-size: 20px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      background-color: #b08c3a;
-      transform: scale(1.1);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #E5E5E5;
-      font-size: 0.9em;
-    }
-
-    /* Responsive pentru mobil */
-    @media (max-width: 768px) {
-      .services {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .service-card {
-        max-width: 90%;
-      }
-
-      .slider img {
-        width: 120px; /* puțin mai mari pe mobil */
-        height: 120px;
-      }
-
-      .slider-btn {
-        display: none; /* ascundem săgețile pe mobil */
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
-    <img src="images/logo.png" alt="Decor Story BN Logo">
+    <img src="images/logo.png" alt="Decor Story BN - logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#acasa">Acasă</a></li>
+        <li><a href="#servicii">Servicii</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="about">
-    <p>
-      La <b>Decor Story</b> transformăm momentele speciale în amintiri de neuitat.
-      Oferim spre închiriere <b>litere volumetrice luminoase</b> și
-      <b>arcade elegante</b>, perfecte pentru nunți, cununii, majorate sau orice alt eveniment important din viața ta. <br><br>
-      Activăm în județele <b>Bistrița-Năsăud, Cluj și Mureș</b>, unde aducem decorul care face diferența.
-    </p>
+  <!-- HERO -->
+  <section id="acasa" class="hero">
+    <h1>Decor Story BN – Litere volumetrice & Arcade pentru evenimente</h1>
+    <p>Închiriere litere volumetrice, arcade florale și decorațiuni speciale pentru nunți, botezuri și evenimente corporate în Bistrița, Cluj și Mureș.</p>
   </section>
 
-  <section class="services">
-    <div class="service-card">
+  <!-- SERVICII -->
+  <section id="servicii">
+    <h2>Serviciile noastre</h2>
+    <div class="serviciu">
       <h3>Litere volumetrice</h3>
-      <p>Cifre și litere luminoase, disponibile în diferite dimensiuni, pentru un decor spectaculos.</p>
-      <div class="slider-container">
-        <button class="slider-btn prev">&#10094;</button>
-        <div class="slider" id="slider1">
-          <a href="images/litera1.jpg" data-lightbox="litere" data-title="Litere volumetrice - Model 1">
-            <img src="images/litera1.jpg" alt="Litere Volumetrice">
-          </a>
-          <a href="images/litera2.jpg" data-lightbox="litere" data-title="Litere volumetrice - Model 2">
-            <img src="images/litera2.jpg" alt="Litere Volumetrice">
-          </a>
-          <a href="images/litera3.jpg" data-lightbox="litere" data-title="Litere volumetrice - Model 3">
-            <img src="images/litera3.jpg" alt="Litere Volumetrice">
-          </a>
-        </div>
-        <button class="slider-btn next">&#10095;</button>
-      </div>
+      <p>Litere luminoase și personalizate pentru a da strălucire evenimentului tău special.</p>
+      <img src="images/litere1.jpg" alt="Litere volumetrice pentru nunți și evenimente">
     </div>
-
-    <div class="service-card">
-      <h3>Arcade pentru evenimente</h3>
-      <p>Arcade moderne și elegante, ideale pentru cununii, nunți și aniversări.</p>
-      <div class="slider-container">
-        <button class="slider-btn prev">&#10094;</button>
-        <div class="slider" id="slider2">
-          <a href="images/arcada1.jpg" data-lightbox="arcade" data-title="Arcadă pentru evenimente - Model 1">
-            <img src="images/arcada1.jpg" alt="Arcadă">
-          </a>
-          <a href="images/arcada2.jpg" data-lightbox="arcade" data-title="Arcadă pentru evenimente - Model 2">
-            <img src="images/arcada2.jpg" alt="Arcadă">
-          </a>
-          <a href="images/arcada3.jpg" data-lightbox="arcade" data-title="Arcadă pentru evenimente - Model 3">
-            <img src="images/arcada3.jpg" alt="Arcadă">
-          </a>
-        </div>
-        <button class="slider-btn next">&#10095;</button>
-      </div>
+    <div class="serviciu">
+      <h3>Arcade elegante</h3>
+      <p>Arcade decorate cu flori sau lumini, ideale pentru intrări spectaculoase și ședințe foto.</p>
+      <img src="images/arcada1.jpg" alt="Arcadă decorativă pentru evenimente speciale">
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Hai să planificăm împreună decorul evenimentului tău!</p>
-    <div class="social-icons">
-      <a href="https://wa.me/40758459005" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="mailto:floreadanielflorea@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://instagram.com/decor_story_bn" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://tiktok.com/@decorstory.bn" target="_blank"><i class="fab fa-tiktok"></i></a>
+  <!-- GALERIE CU SLIDER -->
+  <section id="galerie">
+    <h2>Galerie foto</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/litera1.jpg" alt="Litere volumetrice alb cald Decor Story BN"></div>
+        <div class="swiper-slide"><img src="images/arcada1.jpg" alt="Arcadă elegantă Decor Story BN"></div>
+        <div class="swiper-slide"><img src="images/litere2.jpg" alt="Litere volumetrice LOVE pentru nuntă"></div>
+        <div class="swiper-slide"><img src="images/arcada2.jpg" alt="Arcadă decorată pentru botez"></div>
+      </div>
+      <!-- Butoane navigare -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Paginare -->
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contactează-ne</h2>
+    <p>Suntem disponibili pentru evenimente în Bistrița, Cluj și Mureș.</p>
+    <p><strong>Telefon:</strong> <a href="tel:+407xxxxxxxx">+40 7xx xxx xxx</a></p>
+    <p><strong>Email:</strong> <a href="mailto:contact@decorstory-bn.ro">contact@decorstory-bn.ro</a></p>
+  </section>
+
+  <!-- FOOTER CU SOCIAL MEDIA -->
   <footer>
-    <p>© 2025 Decor Story. Toate drepturile rezervate.</p>
+    <p>&copy; 2024 Decor Story BN</p>
+    <div class="social">
+      <a href="https://facebook.com/decorstorybn" target="_blank"><img src="images/facebook.png" alt="Facebook Decor Story BN"></a>
+      <a href="https://instagram.com/decorstorybn" target="_blank"><img src="images/instagram.png" alt="Instagram Decor Story BN"></a>
+      <a href="https://wa.me/407xxxxxxxx" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp Decor Story BN"></a>
+    </div>
   </footer>
 
-  <!-- Lightbox2 JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-  <!-- Slider & Swipe JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    function initSlider(container) {
-      const slider = container.querySelector('.slider');
-      const prevBtn = container.querySelector('.prev');
-      const nextBtn = container.querySelector('.next');
-
-      prevBtn.addEventListener('click', () => {
-        slider.scrollBy({ left: -120, behavior: 'smooth' });
-      });
-
-      nextBtn.addEventListener('click', () => {
-        slider.scrollBy({ left: 120, behavior: 'smooth' });
-      });
-    }
-
-    document.querySelectorAll('.slider-container').forEach(initSlider);
-
-    // Swipe pentru mobil & drag desktop
-    document.querySelectorAll('.slider').forEach(slider => {
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-
-      slider.addEventListener('mousedown', e => {
-        isDown = true;
-        slider.classList.add('active');
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-      });
-
-      slider.addEventListener('mouseleave', () => {
-        isDown = false;
-        slider.classList.remove('active');
-      });
-
-      slider.addEventListener('mouseup', () => {
-        isDown = false;
-        slider.classList.remove('active');
-      });
-
-      slider.addEventListener('mousemove', e => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 2;
-        slider.scrollLeft = scrollLeft - walk;
-      });
-
-      // Pentru mobil (touch)
-      slider.addEventListener('touchstart', e => {
-        startX = e.touches[0].pageX;
-        scrollLeft = slider.scrollLeft;
-      });
-
-      slider.addEventListener('touchmove', e => {
-        const x = e.touches[0].pageX;
-        const walk = (x - startX) * 2;
-        slider.scrollLeft = scrollLeft - walk;
-      });
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: { el: ".swiper-pagination", clickable: true },
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
     });
   </script>
 </body>
 </html>
-
