@@ -1,0 +1,21 @@
+DECOR STORY BN — site nou pentru GitHub Pages
+=============================================
+
+Pași de urmat în GitHub (floreadanielflorea / repo-ul tău actual):
+
+1. Deschide repo-ul unde e site-ul actual (cel cu index.html, images/, CNAME...).
+2. Șterge fișierele vechi: index.html, folderul images/, robots.txt, sitemap.xml
+   (dacă există deja CNAME, poți păstra, dar e OK și dacă îl înlocuiești cu cel din arhivă).
+3. Apasă „Add file" → „Upload files" și încarcă TOT conținutul acestei arhive
+   (index.html, 404.html, CNAME, robots.txt, sitemap.xml, favicon.ico,
+   folderele assets/ și images/) direct în rădăcina repo-ului.
+4. Commit („Commit changes").
+5. Așteaptă 1–2 minute: GitHub Pages publică automat. Verifică apoi
+   https://decorstory-bn.ro — site-ul nou ar trebui să apară.
+
+Note:
+- Domeniul decorstory-bn.ro este păstrat prin fișierul CNAME din arhivă.
+- Pozele sunt incluse în folderul images/ (nu mai depind de niciun CDN).
+- Sitemap-ul și robots.txt sunt actualizate pentru noul site.
+- Dacă pagina nu se actualizează imediat, mai așteaptă 2-3 minute sau
+  apasă Ctrl+F5 (actualizare fără cache).
